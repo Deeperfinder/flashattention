@@ -19,7 +19,7 @@ module = load(
     "attn_ext",
     sources=list(CURRENT_DIR.glob("attention*")),
     extra_cuda_cflags=["-lineinfo", "--ptxas-options=-v"],
-    extra_include_paths=[str(CURRENT_DIR / "../../include")],
+    extra_include_paths=[str(CURRENT_DIR / "../include")],
     verbose=True,
 )
 
